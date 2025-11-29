@@ -3,6 +3,7 @@ import EditProductModal from "./EditProductModal";
 import { ProductContext } from "../context/ProductsContext";
 import GlassButton from "./Glassbutton";
 
+
 const ProductCard = ({ product, onEdit }) => {
   const { deleteProduct } = useContext(ProductContext);
   const [isEditing, setIsEditing] = useState(false);

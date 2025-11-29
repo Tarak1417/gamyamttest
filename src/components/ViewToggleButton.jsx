@@ -3,6 +3,7 @@ import { ProductContext } from "../context/ProductsContext";
 import { FiGrid, FiList } from "react-icons/fi"; // grid & list icons
 import GlassButton from "./Glassbutton";
 
+
 const ViewToggleButton = () => {
   const { view, setView } = useContext(ProductContext);
 

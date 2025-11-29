@@ -8,8 +8,9 @@ import Pagination from "../components/Pagination";
 
 import { ProductContext } from "../context/ProductsContext";
 import CategoryFilter from "../components/CategoryFilter";
-import ViewToggleButton from "../components/ViewToggleButton";
+
 import Addbutton from "../components/Addbutton";
+import ViewToggleButton from "../components/ViewToggleButton";
 
 
 const ProductPage = () => {
@@ -27,7 +28,7 @@ const ProductPage = () => {
         </div>
 
      <div className="flex gap-2 items-center">
-  <ViewToggleButton />
+  <ViewToggleButton view={view} setView={setView} />
   <Addbutton onClick={() => { setEditItem(null); setShowForm(true); }} />
 </div>
       </div>
