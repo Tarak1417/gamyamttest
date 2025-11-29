@@ -10,6 +10,7 @@ const EditProductModal = ({ product, onClose }) => {
     stock: "",
     description: "",
     category: "",
+    isActive: true,
   });
 
   useEffect(() => {
@@ -72,6 +73,15 @@ const EditProductModal = ({ product, onClose }) => {
             placeholder="Description"
             className="w-full border p-2 rounded"
           />
+          <select
+            name="isActive"
+            value={formData.isActive}
+            onChange={handleChange}
+            className="w-full border p-2 rounded"
+          >
+            <option value={true}>Active</option>
+            <option value={false}>Inactive</option>
+          </select>
 
           <div className="flex justify-end gap-2 mt-2">
             <button
