@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import EditProductModal from "./EditProductModal";
 import { ProductContext } from "../context/ProductsContext";
-import GlassButton from "./Glassbutton";
+import GlassButton from "./GlassButton";
 
 
 const ProductCard = ({ product, onEdit }) => {

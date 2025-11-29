@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { ProductContext } from "../context/ProductsContext";
 import EditProductModal from "./EditProductModal";
-import GlassButton from "./Glassbutton";
+import GlassButton from "./GlassButton";
 
 const ProductRow = ({ product }) => {
   const { deleteProduct } = useContext(ProductContext);
